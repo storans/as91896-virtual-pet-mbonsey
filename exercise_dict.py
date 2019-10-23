@@ -2,3 +2,4 @@
 EXERCISE_DICT = {'hopping': 0.3, 'running': 0.5, 'walking': 0.1}
 
 print(EXERCISE_DICT)
+#
