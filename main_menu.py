@@ -30,3 +30,6 @@ print("     3. Check {}'s Weight".format(rabbit_name))
 print("     4. End Game")
 print("     5. Help")
 print()
+
+# Ask the user to input the number that relates to the action they want to perform
+main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
