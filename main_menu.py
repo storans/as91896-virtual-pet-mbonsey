@@ -15,3 +15,6 @@ EXERCISE_WEIGHT_DICT = {'hopping': 0.3, 'running': 0.5, 'walking': 0.1}
 
 # Set rabbit_name to Kybe for testing purposes
 rabbit_name = "Kybe"
+
+# Set rabbit weight to 2.2 for testing purposes
+rabbit_weight = 2.2
