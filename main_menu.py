@@ -9,3 +9,6 @@ FOOD_WEIGHT_DICT = {"kale": 0.3, "broccoli": 0.2, "apple": 0.4}
 
 # Create a dictionary with each exercise that the user can choose from
 EXERCISE_DICT = {1: "hopping", 2: "running", 3: "walking"}
+
+# Create a dictionary with each exercise and the number of kilograms it will subtract to the weight of the rabbit
+EXERCISE_WEIGHT_DICT = {'hopping': 0.3, 'running': 0.5, 'walking': 0.1}
