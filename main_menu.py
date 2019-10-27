@@ -12,3 +12,6 @@ EXERCISE_DICT = {1: "hopping", 2: "running", 3: "walking"}
 
 # Create a dictionary with each exercise and the number of kilograms it will subtract to the weight of the rabbit
 EXERCISE_WEIGHT_DICT = {'hopping': 0.3, 'running': 0.5, 'walking': 0.1}
+
+# Set rabbit_name to Kybe for testing purposes
+rabbit_name = "Kybe"
