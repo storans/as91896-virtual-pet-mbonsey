@@ -21,3 +21,12 @@ rabbit_weight = 2.2
 
 # Set user_name to Mads for testing purposes
 user_name = "Mads"
+
+# Print the main menu
+print("Please select an option from the menu below.")
+print("     1. Feed {}".format(rabbit_name))
+print("     2. Exercise {}".format(rabbit_name))
+print("     3. Check {}'s Weight".format(rabbit_name))
+print("     4. End Game")
+print("     5. Help")
+print()
