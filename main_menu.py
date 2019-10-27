@@ -18,3 +18,6 @@ rabbit_name = "Kybe"
 
 # Set rabbit weight to 2.2 for testing purposes
 rabbit_weight = 2.2
+
+# Set user_name to Mads for testing purposes
+user_name = "Mads"
