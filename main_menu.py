@@ -29,7 +29,6 @@ print("     2. Exercise {}".format(rabbit_name))
 print("     3. Check {}'s Weight".format(rabbit_name))
 print("     4. End Game")
 print("     5. Help")
-print()
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
@@ -40,4 +39,6 @@ if main_choice == 1:
     print("     1. Kale (+ 0.3kg)")
     print("     2. Broccoli (+ 0.2kg)")
     print("     3. Apple (+ 0.4kg)")
-    print()
+
+    # Ask the user to input the number that relates to the food that they want to feed their rabbit
+    food_choice = input("What food would you like to feed {}. Type a number between 1 and 3: ".format(rabbit_name))
