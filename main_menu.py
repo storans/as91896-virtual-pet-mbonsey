@@ -49,7 +49,7 @@ EXERCISE_DICT = {1: "hopping", 2: "running", 3: "walking"}
 # Create a dictionary with each exercise and the number of kilograms it will subtract to the weight of the rabbit
 EXERCISE_WEIGHT_DICT = {'hopping': 0.3, 'running': 0.5, 'walking': 0.1}
 
-# Create a function that print the main menu
+# Create a function that prints the main menu
 def main_menu():
     print("Please select an option from the menu below.")
     print("     1. Feed {}".format(rabbit_name))
@@ -64,6 +64,19 @@ def main_menu():
     main_choice = check_int("Type a number from the list above. This number must be between 1 and 5", "This number is not between 1 and 6.", 1,6)
     # Return the user's choice
     return main_choice
+
+# Create a function that prints the food menu when the user selects option 1
+def feed():
+    # Print a menu with the food that the user can choose from
+    print("Please choose a food to feed {}.".format(rabbit_name))
+    print("     1. Kale (+ 0.3kg)")
+    print("     2. Broccoli (+ 0.2kg)")
+    print("     3. Apple (+ 0.4kg)")
+    print()
+
+    # Ask the user to input the number that relates to the food that they want to feed their rabbit
+    food_choice = check_int("What food would you like to feed {}? Type a number between 1 and 3".format(rabbit_name), "This number is not between 1 and 3.", 1, 3)
+    print()
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
