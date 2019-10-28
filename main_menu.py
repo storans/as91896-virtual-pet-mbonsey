@@ -13,22 +13,16 @@ EXERCISE_DICT = {1: "hopping", 2: "running", 3: "walking"}
 # Create a dictionary with each exercise and the number of kilograms it will subtract to the weight of the rabbit
 EXERCISE_WEIGHT_DICT = {'hopping': 0.3, 'running': 0.5, 'walking': 0.1}
 
-# Set rabbit_name to Kybe for testing purposes
-rabbit_name = "Kybe"
-
-# Set rabbit weight to 2.2 for testing purposes
-rabbit_weight = 2.2
-
-# Set user_name to Mads for testing purposes
-user_name = "Mads"
-
-# Print the main menu
-print("Please select an option from the menu below.")
-print("     1. Feed {}".format(rabbit_name))
-print("     2. Exercise {}".format(rabbit_name))
-print("     3. Check {}'s Weight".format(rabbit_name))
-print("     4. End Game")
-print("     5. Help")
+# Create a function that print the main menu
+def main_menu():
+    print("Please select an option from the menu below.")
+    print("     1. Feed {}".format(rabbit_name))
+    print("     2. Exercise {}".format(rabbit_name))
+    print("     3. Check {}'s Weight".format(rabbit_name))
+    print("     4. End Game")
+    print("     5. Help")
+    print("     6. Restart")
+    print()
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
