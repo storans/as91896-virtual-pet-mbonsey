@@ -101,9 +101,10 @@ def exercise():
 
     # Ask the user to input the number that relates to the exercise that they want their rabbit to do
     exercise_choice = check_int("What exercise would you like {} to do? Type a number between 1 and 3".format(rabbit_name), "This number is not between 1 and 3.", 1, 3)
-
     # Create a variable called exercise_weight that calls the number of kilograms that each food will add to the rabbit's original weight
     exercise_weight = EXERCISE_WEIGHT_DICT[EXERCISE_DICT[exercise_choice]]
+    # Create a new variable called new_weight that adds the number of kilograms that the selected food will add to the rabbit's original weight
+    new_weight = rabbit_weight - exercise_weight
 
 
 # Ask the user to input the number that relates to the action they want to perform
