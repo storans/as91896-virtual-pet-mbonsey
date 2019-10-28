@@ -24,6 +24,11 @@ def main_menu():
     print("     6. Restart")
     print()
 
+    # Ask the user to input the number that relates to the action they want to perform
+    main_choice = check_int("Type a number from the list above. This number must be between 1 and 5", "This number is not between 1 and 6.", 1,6)
+    # Return the user's choice
+    return main_choice
+
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
 
