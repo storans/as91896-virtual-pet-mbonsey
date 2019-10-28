@@ -65,7 +65,7 @@ def main_menu():
     # Return the user's choice
     return main_choice
 
-# Create a function that prints the food menu when the user selects option 1
+# Create a function that will get called when the user selects option 1
 def feed():
     # Print a menu with the food that the user can choose from
     print("Please choose a food to feed {}.".format(rabbit_name))
@@ -81,6 +81,25 @@ def feed():
     food_weight = FOOD_WEIGHT_DICT[FOOD_DICT[food_choice]]
     # Adds the number of kilograms that the selected food will add to the rabbit's original weight
     new_weight = rabbit_weight + food_weight
+
+    # Print a message that tells the user the new weight of their rabbit
+    print("Since {} ate {}, we will add {}kg to their weight.".format(rabbit_name, FOOD_DICT[food_choice], food_weight))
+    print()
+
+    check_weight(new_weight)
+    # Return the new weight of the rabbit
+    return new_weight
+
+# Create a function that will get called when the user selects option 2
+def exercise():
+    # Print a menu with the exercise that the use can choose from
+    print("Please choose an exercise for {}.".format(rabbit_name))
+    print("     1. Hopping (- 0.3kg)")
+    print("     2. Running (- 0.5kg)")
+    print("     3. Walking (- 0.1kg)")
+    print()
+
+
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
