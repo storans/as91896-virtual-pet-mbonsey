@@ -106,6 +106,14 @@ def exercise():
     # Create a new variable called new_weight that adds the number of kilograms that the selected food will add to the rabbit's original weight
     new_weight = rabbit_weight - exercise_weight
 
+    # Print a message that tells the user the new weight of their rabbit
+    print("Since {} did a {} exercise, we will take away {}kg from their weight.".format(rabbit_name, EXERCISE_DICT[exercise_choice], exercise_weight))
+    print()
+
+    check_weight(new_weight)
+    # Return the rabbit's new weight
+    return new_weight
+
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
