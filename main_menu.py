@@ -77,6 +77,8 @@ def feed():
     # Ask the user to input the number that relates to the food that they want to feed their rabbit
     food_choice = check_int("What food would you like to feed {}? Type a number between 1 and 3".format(rabbit_name), "This number is not between 1 and 3.", 1, 3)
     print()
+    # Create a variable called food_weight that calls the number of kilograms that each food will add to the rabbit's original weight
+    food_weight = FOOD_WEIGHT_DICT[FOOD_DICT[food_choice]]
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
