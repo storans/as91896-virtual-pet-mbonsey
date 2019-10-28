@@ -65,7 +65,7 @@ def main_menu():
     # Return the user's choice
     return main_choice
 
-# Create a function that will get called when the user selects option 1
+# Create a function that will be called when the user selects option 1
 def feed():
     # Print a menu with the food that the user can choose from
     print("Please choose a food to feed {}.".format(rabbit_name))
@@ -90,7 +90,7 @@ def feed():
     # Return the new weight of the rabbit
     return new_weight
 
-# Create a function that will get called when the user selects option 2
+# Create a function that will be called when the user selects option 2
 def exercise():
     # Print a menu with the exercise that the use can choose from
     print("Please choose an exercise for {}.".format(rabbit_name))
@@ -113,6 +113,19 @@ def exercise():
     check_weight(new_weight)
     # Return the rabbit's new weight
     return new_weight
+
+# Create a function that check the rabbit's weight
+def check_weight(new_weight):
+    if 1.5 <= new_weight <= 2.5:
+        continue_game = True
+        print("{}'s weight is now {:.2f}!".format(rabbit_name, new_weight))
+        print()
+    else:
+        if 1.5 > new_weight:
+            print("I'm really sorry {}, but {} died because they were underweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.".format(user_name, rabbit_name, rabbit_name, new_weight))
+        if 2.5 < new_weight:
+            print("I'm really sorry {}, but {} died because they were overweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.".format(user_name, rabbit_name, rabbit_name, new_weight))
+        exit()
 
 
 # Ask the user to input the number that relates to the action they want to perform
