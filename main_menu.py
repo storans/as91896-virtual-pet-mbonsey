@@ -99,6 +99,9 @@ def exercise():
     print("     3. Walking (- 0.1kg)")
     print()
 
+    # Ask the user to input the number that relates to the exercise that they want their rabbit to do
+    exercise_choice = check_int("What exercise would you like {} to do? Type a number between 1 and 3".format(rabbit_name), "This number is not between 1 and 3.", 1, 3)
+
 
 
 # Ask the user to input the number that relates to the action they want to perform
