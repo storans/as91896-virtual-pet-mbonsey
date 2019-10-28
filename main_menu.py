@@ -79,6 +79,8 @@ def feed():
     print()
     # Create a variable called food_weight that calls the number of kilograms that each food will add to the rabbit's original weight
     food_weight = FOOD_WEIGHT_DICT[FOOD_DICT[food_choice]]
+    # Adds the number of kilograms that the selected food will add to the rabbit's original weight
+    new_weight = rabbit_weight + food_weight
 
 # Ask the user to input the number that relates to the action they want to perform
 main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
