@@ -125,7 +125,30 @@ def check_weight(new_weight):
             print("I'm really sorry {}, but {} died because they were underweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.".format(user_name, rabbit_name, rabbit_name, new_weight))
         if 2.5 < new_weight:
             print("I'm really sorry {}, but {} died because they were overweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.".format(user_name, rabbit_name, rabbit_name, new_weight))
+        # If the rabbit dies, exit the game
         exit()
+
+# Create a function that is called before the main routine starts, therefore begins as soon as the user opens the program
+def restart():
+    # Ask the user to enter their name and set this as the variable user_name
+    user_name = input("Welcome to Virtual Pet! Please type your name here: ").strip().capitalize()
+    # Create a welcome message and give them information on how to use the program
+    print("Hello, {}. Welcome to Virtual Pet! This game allows you to look after your very own pet rabbit that you can feed and exercise.".format(user_name))
+    print()
+    # Ask the user to name their rabbit and set this as the variable rabbit_name
+    rabbit_name = input("Please type what you would like to call your rabbit: ").strip().capitalize()
+    print("{} is a lovely name!".format(rabbit_name))
+    print()
+    # Ask the user what they want their rabbit to weigh - this number must be between 1.5kg and 2.5kg
+    rabbit_weight = check_float("Please type the weight you want your rabbit to be. This number must be between 1.5 and 2.5", "This number is not between 1.5 and 2.5.", 1.5, 2.5)
+    print()
+    print("Perfect! Let's get started {}!".format(user_name))
+    print()
+    # Rabbit symbol customised from https://kipkis.com/Make_a_Bunny_by_Typing_Characters_on_Your_Keyboard
+    print("(\_/)        Your pet rabbit's")
+    print("(>.<)        name is {} and they".format(rabbit_name))
+    print('(")_(")      weigh {}kg!'.format(rabbit_weight))
+    print()
 
 
 # Ask the user to input the number that relates to the action they want to perform
