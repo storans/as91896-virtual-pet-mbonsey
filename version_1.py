@@ -33,7 +33,7 @@ def check_float(question, error, low, high):
                 print()
         # If an invalid input is made, the prompt is made again
         except ValueError:
-        # The error that prints is customised to the question
+        # The error that will be printed is customised to the question
             print(error)
 
 # Create a dictionary of different things eg. weight and exercise, that user can check about their rabbit
