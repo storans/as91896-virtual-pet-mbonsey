@@ -150,9 +150,8 @@ def restart():
     print('(")_(")      weigh {}kg!'.format(rabbit_weight))
     print()
 
-
-# Ask the user to input the number that relates to the action they want to perform
-main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
+    # Ask the user to input the number that relates to the action they want to perform
+    main_choice = input("Type a number from the list above. This number must be between 1 and 5: ")
 
 if main_choice == 1:
     # Print a menu with the food that the user can choose from
