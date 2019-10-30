@@ -5,13 +5,13 @@ def check_string(question, error):
 
     while not valid:
         # Any question that needs a number input
-        number = input("{}: ".format(question))
+        word = input("{}: ".format(question))
         try:
-            number = int(number)
-            if low <= number <= high:
-                return number
-            else:
+            word = input(word)
+            if int in word:
                 print(error)
+            else:
+                return word
         # If an invalid input is made, the prompt is made again
         except ValueError:
         # The error that prints is customised to the question
