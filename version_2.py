@@ -154,7 +154,7 @@ def restart():
     # Call my float checking function to ensure that the weight of the rabbit is valid
     rabbit_weight = check_float("Please type the weight you want your rabbit to be. This number must be between 1.5 and 2.5", "This number is not between 1.5 and 2.5.", 1.5, 2.5)
     print()
-    # Rabbit symbol customised from https://kipkis.com/Make_a_Bunny_by_Typing_Characters_on_Your_Keyboard
+    # Rabbit symbol, customised from https://kipkis.com/Make_a_Bunny_by_Typing_Characters_on_Your_Keyboard
     print("(\_/)        Perfect! Let's get started, {}!".format(user_name))
     print("(>.<)        Your pet rabbit's name is {}".format(rabbit_name))
     print('(")_(")      and they weigh {:.2f}kg!'.format(rabbit_weight))
