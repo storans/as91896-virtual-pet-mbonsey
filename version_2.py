@@ -87,7 +87,7 @@ def feed():
 
     # Print a message that tells the user how many kilograms will be added to their rabbit's weight
     print("Yum! Since {} ate {}, we will add {}kg to your rabbit's weight.".format(rabbit_name, FOOD_DICT[food_choice], food_weight))
-
+    print()
     # Return the rabbit's new weight
     return check_weight(new_weight)
 
@@ -110,7 +110,7 @@ def exercise():
 
     # Print a message that tells the user how many kilograms will be removed from their rabbit's current weight
     print("{} is exhausted from that exercise! Since they did a {} exercise, we will take away {}kg from their weight.".format(rabbit_name, EXERCISE_DICT[exercise_choice], exercise_weight))
-
+    print()
     # Return the rabbit's new weight
     return check_weight(new_weight)
 
@@ -120,15 +120,18 @@ def check_weight(new_weight):
     if 1.5 <= new_weight <= 2.5:
         continue_game = True
         print("{}'s weight is now {:.2f}kg!".format(rabbit_name, new_weight))
+        print()
         return new_weight
     # If the rabbit's weight is not between the two valid values, an if statement will determine how the rabbit died
     else:
         # If the rabbit was under 1.5kg, they died because they were underweight
         if 1.5 > new_weight:
-            print("I'm really sorry {}, but {} died because they were underweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.\nI hope you enjoyed playing Virtual Pet! See you next time.".format(user_name, rabbit_name, rabbit_name, new_weight))
+            print("I'm really sorry, {} but {} died because they were underweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.\nI hope you enjoyed playing Virtual Pet!".format(user_name, rabbit_name, rabbit_name, new_weight))
+            print()
         # If the rabbit was over 2.5kg, they died because they were overweight
         if 2.5 < new_weight:
-            print("I'm really sorry {}, but {} died because they were overweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.\nI hope you enjoyed playing Virtual Pet! See you next time.".format(user_name, rabbit_name, rabbit_name, new_weight))
+            print("I'm really sorry, {} but {} died because they were overweight. To keep your rabbit alive, they must be between 1.5kg and 2.5kg and {} was {:.2f}kg.\nI hope you enjoyed playing Virtual Pet!".format(user_name, rabbit_name, rabbit_name, new_weight))
+            print()
         # If the rabbit dies, the game is over
         return -1
 
@@ -188,10 +191,12 @@ while (True):
         exit()
     # If the user selects option 5 the receive a help message
     if main_choice == 5:
-        print("Welcome to Virtual Pet! \nThis game allows you to look after your very own pet rabbit that you can feed and exercise. \nThe main menu will ask you to enter a number that will allow you to feed your rabbit, exercise your rabbit, check your rabbit's weight, end the game or ask for help. \nRemember: Your pet rabbit must stay between 1.5kg and 2.5kg otherwise it will die, so make sure to feed and exercise your rabbit regularly! Have fun playing!")
+        print("Welcome to Virtual Pet! \nThis game allows you to look after your very own pet rabbit that you can feed and exercise. \nThe main menu gives you options of what you can do with your rabbit! You could feed your rabbit, exercise your rabbit, check your rabbit's weight, end the game, ask for help or even restart. \nRemember: Your pet rabbit must stay between 1.5kg and 2.5kg otherwise it will die, so make sure to feed and exercise your rabbit regularly!\nHave fun playing!")
         print()
     # If the user selects option 6 the restart function is called so the user can restart the game
     if main_choice == 6:
+        # Print some hyphens to show that a new game has started
+        print("---------------------------------------------------")
         restart()
     input("Press any key and [enter] to continue: ")
     print()
